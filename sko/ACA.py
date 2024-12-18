@@ -24,7 +24,7 @@ class ACA_TSP:
 
         self.Tau = np.ones((n_dim, n_dim))  # 信息素矩阵，每次迭代都会更新
 
-        self.Table = np.zeros((size_pop, n_dim), dtype=int)  # 某一代每个蚂蚁的爬行路径
+        self.Table = np.zeros((size_pop, n_dim), dtype=np.int32)  # 某一代每个蚂蚁的爬行路径
 
         self.y = None  # 某一代每个蚂蚁的爬行总距离
         self.generation_best_X, self.generation_best_Y = [], []  # 记录各代的最佳情况
